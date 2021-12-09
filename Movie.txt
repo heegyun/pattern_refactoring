@@ -1,0 +1,32 @@
+/*
+ * 비디오 데이터 클래스
+ */
+public class Movie {
+	
+	public enum PriceCode {CHILDREN,REGULAR,NEW_RELEASE }
+	
+	private String title; //영화제목
+	private PriceCode priceCode; //영화분류코드
+	
+	public Movie(String title, PriceCode priceCode) {
+		this.title = title;
+		setPriceCode(priceCode);
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public PriceCode getPriceCode() {
+		return priceCode;
+	}
+
+	public void setPriceCode(PriceCode priceCode) {
+		this.priceCode = priceCode;
+	}
+	
+}
